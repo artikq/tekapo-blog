@@ -1,3 +1,11 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+}
+* {
+  box-sizing: border-box;
+}
 body {
   background: #fff;
   color: gray;
@@ -119,7 +127,7 @@ a.nostyle:visited {
 }
 
 .footer__container {
-  padding: 3px;
+  padding: 3px 3px 6px 3px;
   text-align: center;
   color: black;
 }
