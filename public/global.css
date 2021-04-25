@@ -1,13 +1,14 @@
 body {
-  background: #445;
-  color: #fff;
+  background: #fff;
+  color: gray;
+  font-family: 'Open Sans', sans-serif;
 }
 .header__banner {
   background-image: url(https://images.unsplash.com/photo-1546177461-68622f53ed0e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1267&q=80);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  height: 200px;
+  height: 150px;
   width: 95vw;
 }
 .header__container {
@@ -26,45 +27,76 @@ body {
   justify-content: space-between;
   align-items: center;
 }
-
 h1,
-.test-block {
-  font-family: 'Open Sans', sans-serif;
-  font-size: 2rem;
-  padding: 1rem;
+h3 {
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+}
+h1,
+.content__block {
+  padding: 0.7rem;
   font-weight: 400;
   position: relative;
   opacity: 1;
   transform: scale(1);
   transition: transform 0.5s ease, opacity 1s ease;
 }
-footer.test-block {
+.header__title {
+  font-size: 2rem;
+}
+.header__subtitle {
+  padding: 1rem;
+  color: black;
+}
+
+.content__main {
+  flex-grow: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.content__description {
+  font-size: 1.5rem;
+  color: black;
+  margin-bottom: 30px;
+  width: 100%;
+}
+
+.content__description p {
+  margin: 0 auto;
+  padding: 0.1rem;
+  font-size: 1.5rem;
+}
+
+footer.content__block {
   font-size: 1rem;
 }
-.is-loading .test-block,
+.is-loading .content__block,
 .is-loading h1 {
   transform: scale(0.9);
   opacity: 0;
 }
 
-h1:before,
-h1:after {
+.header__title:before,
+.header__title:after {
   height: 2px;
   width: 100%;
   content: '';
-  background: white;
+  background: gray;
   display: block;
   position: absolute;
   transition: width 0.4s ease;
   transition-delay: 0.8s;
 }
 
-h1:before {
+.header__title:before {
   top: 0;
   left: 0;
 }
 
-h1:after {
+.header__title:after {
   bottom: 0;
   right: 0;
 }
@@ -84,4 +116,26 @@ a.nostyle:visited {
   text-decoration: inherit;
   color: inherit;
   cursor: pointer;
+}
+
+.footer__container {
+  padding: 3px;
+  text-align: center;
+  color: black;
+}
+.footer__container p {
+  padding: 0;
+  margin: 0 0 1px 0;
+}
+
+.content__link--container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.content__link--button {
+  display: inline-block;
+  color: black;
+  border: 0.5px solid black;
+  padding: 0.3rem;
 }
